@@ -43,7 +43,10 @@ public class Newapp5Activity extends Activity {
     	Toast.makeText(this, "You clicked Add", Toast.LENGTH_SHORT).show();
     	break;
     	case R.id.remove_item:
-    	Toast.makeText(this, "You clicked Remove", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "You clicked Remove", Toast.LENGTH_SHORT).show();
+    	break;
+    	case R.id.exit_item:
+    	finish();
     	break;
     	default:
     	}
