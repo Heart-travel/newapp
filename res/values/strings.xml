@@ -3,6 +3,7 @@
 
     <string name="app_name">Love</string>
     <string name="hello_world">This is the first apps!</string>
+    <string name="button">Button 1</string>
     <string name="action_settings">Settings</string>
 
 </resources>
