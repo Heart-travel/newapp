@@ -22,8 +22,8 @@ public class Newapp5Activity extends Activity {
         button1.setOnClickListener(new OnClickListener() {
         	@Override
         	public void onClick(View v) {
-        	Toast.makeText(Newapp5Activity.this, "You clicked Button 1",
-        	Toast.LENGTH_SHORT).show();
+        	Toast.makeText(Newapp5Activity.this, "You conform it!",
+        	Toast.LENGTH_LONG).show();
         	}
         	});
     }
@@ -32,8 +32,8 @@ public class Newapp5Activity extends Activity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.newapp5, menu);
-        return true;
+    	getMenuInflater().inflate(R.menu.main, menu);
+    	return true;
     }
 
     @Override
