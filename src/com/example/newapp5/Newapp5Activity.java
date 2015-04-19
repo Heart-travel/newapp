@@ -25,8 +25,9 @@ public class Newapp5Activity extends Activity {
         	public void onClick(View v) {
         	/*Toast.makeText(Newapp5Activity.this, "You conform it!",
         	Toast.LENGTH_LONG).show();*/
-    		Intent intent = new Intent(Newapp5Activity.this, SecondActivity.class);
-    		startActivity(intent);
+        	Intent intent = new Intent("com.example.activitytest.ACTION_START");
+        	intent.addCategory("com.example.activitytest.MY_CATEGORY");
+        	startActivity(intent);
         	}
         	});
     }
