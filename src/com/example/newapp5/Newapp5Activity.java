@@ -28,9 +28,14 @@ public class Newapp5Activity extends Activity {
         	Toast.LENGTH_LONG).show();*/
 /*        	Intent intent = new Intent("com.example.activitytest.ACTION_START");
         	intent.addCategory("com.example.activitytest.MY_CATEGORY");*/
-    		Intent intent = new Intent(Intent.ACTION_VIEW);
+/*    		Intent intent = new Intent(Intent.ACTION_VIEW);
     		intent.setData(Uri.parse("http://www.baidu.com"));
-        	startActivity(intent);
+        	startActivity(intent);*/
+        	// pass the data to the next activity
+    		String data = "Hello SecondActivity";
+    		Intent intent = new Intent(Newapp5Activity.this, SecondActivity.class);
+    		intent.putExtra("extra_data", data);
+    		startActivity(intent);
         	}
         	});
     }
